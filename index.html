@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>EV Studios</title>
+
+<style>
+:root {
+  --bg: #0b0b0b;
+  --card: #141414;
+  --text: #f2f2f2;
+  --muted: #a1a1a1;
+  --accent: #6ea8ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 80px 24px;
+}
+
+h1 {
+  font-size: 56px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 32px;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+.btn:hover {
+  background: var(--accent);
+  color: #000;
+  transform: scale(1.08);
+}
+
+/* CARDS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.card {
+  background: var(--card);
+  padding: 28px;
+  border-radius: 16px;
+  transition: all 0.35s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: #1c1c1c;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+/* SECTIONS */
+.section {
+  margin-top: 120px;
+}
+
+/* SMOOTH SCROLL FEEL */
+html {
+  scroll-behavior: smooth;
+}
+
+/* FADE-IN ANIMATION */
+.fade {
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container fade">
+
+  <!-- HERO -->
+  <h1>EV Studios</h1>
+  <p><strong>Premium Discord Systems & Automation</strong></p>
+  <p style="margin-top:20px;">
+    We design and engineer professional Discord servers and custom bots
+    built for scale, automation, and long-term growth.
+  </p>
+
+  <a class="btn" href="#services">View Services</a>
+
+  <!-- SERVICES -->
+  <div class="section" id="services">
+    <h2>Services</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Discord Infrastructure</h3>
+        <p>
+          Full server architecture, role systems,
+          ticket workflows, and moderation automation.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Custom Bot Development</h3>
+        <p>
+          Economy systems, game bots,
+          AI automation, and scalable codebases.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Optimization & Revamps</h3>
+        <p>
+          Server cleanup, performance optimization,
+          and staff workflow automation.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- WORK -->
+  <div class="section">
+    <h2>Work</h2>
+    <p>
+      Advanced ticket systems, scalable role hierarchies,
+      custom bots, and automation reducing staff workload by 60–80%.
+    </p>
+  </div>
+
+  <!-- PRICING -->
+  <div class="section">
+    <h2>Pricing</h2>
+    <p>
+      Basic Systems — from $30<br>
+      Advanced Automation — $60–$120<br>
+      Custom Bots & Games — $120+
+    </p>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="section">
+    <h2>Start a Project</h2>
+    <p>
+      Serious inquiries only.<br>
+      © EV Studios
+    </p>
+
+    <a class="btn" href="#">Contact Us</a>
+  </div>
+
+</div>
+
+</body>
+</html>
